@@ -22,8 +22,9 @@
 
 ## 🏗️ 模型架构 (Architecture)
 
-![Architecture](https://via.placeholder.com/800x400?text=Please+replace+with+Figure+3+from+your+paper)
-*注：请在此处替换为论文中的 Figure 3 或 Figure 2 架构图链接*
+<p align="center">
+  <img src="moxing.png" alt="DA-TransResUNet 架构图" width="600px">
+</p>
 
 ---
 
