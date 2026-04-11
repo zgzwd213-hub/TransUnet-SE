@@ -92,11 +92,13 @@ python examples/quick_test.py
 ```
 This script will:
 
-Load the sample dataset
-Perform a simple inference (demo)
-Print prediction results
+Load the sample well log dataset
+Construct 9-channel input features, including gradients and normalized depth
+Encode stratigraphic labels from the LAYER column
+Run a lightweight demo inference
+Print prediction results and basic statistics
 
-Successful execution confirms that the repository is functional.
+Note: this script is a functional demonstration of the workflow described in the paper. It does not reproduce the full DA-TransResUNet model training because the full industrial dataset and trained weights are not publicly available.
 
 ## Training
 
