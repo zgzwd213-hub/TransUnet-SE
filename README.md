@@ -56,9 +56,9 @@ on an industrial dataset with 1170 wells.
 Clone the repository:
 
 ```bash
-git clone https://github.com/YourUsername/DA-TransResUNet.git
+git clone https://github.com/zgzwd213-hub/DA-TransResUNet.git
 cd DA-TransResUNet
-
+---
 Dataset
 
 Due to confidentiality agreements, the full industrial dataset (1170 wells) used in this study cannot be publicly released.
