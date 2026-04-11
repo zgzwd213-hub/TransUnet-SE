@@ -59,5 +59,40 @@ Clone the repository:
 git clone https://github.com/zgzwd213-hub/DA-TransResUNet.git
 cd DA-TransResUNet
 
-Install dependencies:
-pip install -r requirements.txt
+---
+
+## Dataset
+
+Due to confidentiality agreements, the full industrial dataset (1170 wells) used in this study cannot be publicly released.
+
+A sample dataset is provided for demonstration and reproducibility:
+data/sample_data.csv
+
+
+### Sample Data Description
+
+The dataset includes:
+
+- **GR** – Gamma Ray  
+- **AC** – Acoustic transit time  
+- **DEN** – Density  
+- **RLLD** – Deep resistivity  
+- **Label** – Stratigraphic unit index  
+
+This dataset is intended for testing code functionality only.
+
+---
+
+## Quick Test (Required for Reproducibility)
+
+To run a quick demonstration:
+
+```bash
+python examples/quick_test.py
+This script will:
+
+Load the sample dataset
+Perform a simple inference (demo)
+Print prediction results
+
+Successful execution confirms that the repository is functional.
