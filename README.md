@@ -89,7 +89,7 @@ To run a quick demonstration:
 
 ```bash
 python examples/quick_test.py
-
+```
 This script will:
 
 Load the sample dataset
