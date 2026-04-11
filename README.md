@@ -98,12 +98,13 @@ Print prediction results
 
 Successful execution confirms that the repository is functional.
 
-Training
+## Training
 
 To train the model:
+```bash
 python train/train.py
-
-Inference
+```
+## Inference
 
 To perform prediction:
 
@@ -111,7 +112,7 @@ Code Availability
 
 The implementation of DA-TransResUNet is publicly available in this repository and can be freely accessed for research purposes.
 
-Notes
+## Notes
 The full industrial dataset is not publicly available
 Sample data is provided for demonstration only
 This repository is designed to meet journal requirements for code availability
