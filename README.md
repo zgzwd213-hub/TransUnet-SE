@@ -58,3 +58,23 @@ Clone the repository:
 ```bash
 git clone https://github.com/YourUsername/DA-TransResUNet.git
 cd DA-TransResUNet
+
+Dataset
+
+Due to confidentiality agreements, the full industrial dataset (1170 wells) used in this study cannot be publicly released.
+
+A sample dataset is provided for demonstration and reproducibility:
+data/sample_data.csv
+
+Quick Test (Required for Reproducibility)
+
+To run a quick demonstration:
+python examples/quick_test.py
+Training
+
+To train the model:
+python train/train.py
+Notes
+The full industrial dataset is not publicly available
+Sample data is provided for demonstration only
+The repository is designed to meet journal requirements for code availability and reproducibility
