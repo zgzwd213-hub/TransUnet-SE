@@ -128,6 +128,7 @@ python examples/quick_test.py
 This script performs a simplified inference workflow, including:
 
 Loading well log data from data/sample_data.csv
+
 Constructing 9-channel input features:
 -   GR, AC, DEN, RLLD
 -   First-order gradients
