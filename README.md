@@ -76,11 +76,11 @@ data/sample_data.csv
 
 The dataset includes:
 
-GR – Gamma Ray
-AC – Acoustic transit time
-DEN – Density
-RLLD – Deep resistivity
-LAYER – Stratigraphic unit label
+- GR – Gamma Ray
+- AC – Acoustic transit time
+- DEN – Density
+- RLLD – Deep resistivity
+- LAYER – Stratigraphic unit label
 
 This dataset is intended for testing code functionality only.
 
@@ -95,13 +95,13 @@ python examples/quick_test.py
 ```
 This script will:
 
-Load the sample well log dataset
+- Load the sample well log dataset
 - Construct 9-channel input features, including gradients and normalized depth
 - Encode stratigraphic labels from the LAYER column
 - Run a lightweight demo inference
 - Print prediction results and basic statistics
 
-Note: this script is a functional demonstration of the workflow described in the paper. It does not reproduce the full DA-TransResUNet training pipeline because the full industrial dataset and trained weights are not publicly available.
+**Note:** this script is a functional demonstration of the workflow described in the paper. It does not reproduce the full DA-TransResUNet training pipeline because the full industrial dataset and trained weights are not publicly available.
 
 ## Training
 
@@ -129,9 +129,9 @@ This script performs a simplified inference workflow, including:
 
 Loading well log data from data/sample_data.csv
 Constructing 9-channel input features:
-- GR, AC, DEN, RLLD
-- First-order gradients
-- Normalized depth (Norm_Depth)
+-   GR, AC, DEN, RLLD
+-   First-order gradients
+-   Normalized depth (Norm_Depth)
 - Encoding stratigraphic labels from the LAYER column
 - Running a lightweight neural network to simulate predictions
 - Outputting predicted stratigraphic units and basic statistics
