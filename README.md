@@ -124,7 +124,7 @@ To run inference on the sample dataset:
 
 ```bash
 python examples/quick_test.py
-
+```
 This script performs a simplified inference workflow, including:
 
 Loading well log data from data/sample_data.csv
