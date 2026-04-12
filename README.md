@@ -56,28 +56,31 @@ on an industrial dataset with 1170 wells.
 Clone the repository:
 
 ```bash
-git clone https://github.com/zgzwd213-hub/DA-TransResUNet.git
-cd DA-TransResUNet
+git clone https://github.com/zgzwd213-hub/TransUnet-SE.git
+cd TransUnet-SE
 ```
 ---
+
+
 
 ## Dataset
 
 Due to confidentiality agreements, the full industrial dataset (1170 wells) used in this study cannot be publicly released.
 
 A sample dataset is provided for demonstration and reproducibility:
+
+```text
 data/sample_data.csv
-
-
+```
 ### Sample Data Description
 
 The dataset includes:
 
-- **GR** – Gamma Ray  
-- **AC** – Acoustic transit time  
-- **DEN** – Density  
-- **RLLD** – Deep resistivity  
-- **Label** – Stratigraphic unit index  
+GR – Gamma Ray
+AC – Acoustic transit time
+DEN – Density
+RLLD – Deep resistivity
+LAYER – Stratigraphic unit label
 
 This dataset is intended for testing code functionality only.
 
@@ -98,7 +101,7 @@ Encode stratigraphic labels from the LAYER column
 Run a lightweight demo inference
 Print prediction results and basic statistics
 
-Note: this script is a functional demonstration of the workflow described in the paper. It does not reproduce the full DA-TransResUNet model training because the full industrial dataset and trained weights are not publicly available.
+Note: this script is a functional demonstration of the workflow described in the paper. It does not reproduce the full DA-TransResUNet training pipeline because the full industrial dataset and trained weights are not publicly available.
 
 ## Training
 
@@ -114,11 +117,39 @@ Train a lightweight demo classifier
 Save a demo checkpoint
 
 Note: this script is provided for repository validation and reproducibility purposes. It does not reproduce the full industrial-scale training pipeline described in the paper.
+
 ## Inference
 
-To perform prediction:
+To run inference on the sample dataset:
 
-Code Availability
+```bash
+python examples/quick_test.py
+
+This script performs a simplified inference workflow, including:
+
+Loading well log data from data/sample_data.csv
+Constructing 9-channel input features:
+GR, AC, DEN, RLLD
+First-order gradients
+Normalized depth (Norm_Depth)
+Encoding stratigraphic labels from the LAYER column
+Running a lightweight neural network to simulate predictions
+Outputting predicted stratigraphic units and basic statistics
+Output Example
+
+The script will print:
+
+Data shape and feature dimensions
+Number of stratigraphic classes
+Prediction results for the first few depth points
+Demo accuracy
+Important Notes
+This inference script is designed for workflow demonstration only
+It does not reproduce the full DA-TransResUNet model
+The full trained model and industrial dataset are not publicly available due to confidentiality constraints
+The purpose is to ensure code functionality and reproducibility compliance
+
+## Code Availability
 
 The implementation of DA-TransResUNet is publicly available in this repository and can be freely accessed for research purposes.
 
