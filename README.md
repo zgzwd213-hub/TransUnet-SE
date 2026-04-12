@@ -135,6 +135,7 @@ Constructing 9-channel input features:
 - Encoding stratigraphic labels from the LAYER column
 - Running a lightweight neural network to simulate predictions
 - Outputting predicted stratigraphic units and basic statistics
+  
   Output Example
 
 The script will print:
@@ -143,6 +144,7 @@ The script will print:
 - Number of stratigraphic classes
 - Prediction results for the first few depth points
 - Demo accuracy
+  
  Important Notes
 - This inference script is designed for workflow demonstration only
 - It does not reproduce the full DA-TransResUNet model
