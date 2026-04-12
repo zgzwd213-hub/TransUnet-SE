@@ -104,8 +104,16 @@ Note: this script is a functional demonstration of the workflow described in the
 
 To train the model:
 ```bash
-python train/train.py
+python train.py
 ```
+This script will:
+
+Load the sample dataset
+Construct 9-channel input features
+Train a lightweight demo classifier
+Save a demo checkpoint
+
+Note: this script is provided for repository validation and reproducibility purposes. It does not reproduce the full industrial-scale training pipeline described in the paper.
 ## Inference
 
 To perform prediction:
