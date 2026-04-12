@@ -136,7 +136,7 @@ Constructing 9-channel input features:
 - Running a lightweight neural network to simulate predictions
 - Outputting predicted stratigraphic units and basic statistics
   
-  Output Example
+**Output Example**
 
 The script will print:
 
@@ -145,7 +145,7 @@ The script will print:
 - Prediction results for the first few depth points
 - Demo accuracy
   
- Important Notes
+ **Important Notes**
 - This inference script is designed for workflow demonstration only
 - It does not reproduce the full DA-TransResUNet model
 - The full trained model and industrial dataset are not publicly available due to confidentiality constraints
