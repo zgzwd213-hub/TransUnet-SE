@@ -96,10 +96,10 @@ python examples/quick_test.py
 This script will:
 
 Load the sample well log dataset
--Construct 9-channel input features, including gradients and normalized depth
--Encode stratigraphic labels from the LAYER column
--Run a lightweight demo inference
--Print prediction results and basic statistics
+- Construct 9-channel input features, including gradients and normalized depth
+- Encode stratigraphic labels from the LAYER column
+- Run a lightweight demo inference
+- Print prediction results and basic statistics
 
 Note: this script is a functional demonstration of the workflow described in the paper. It does not reproduce the full DA-TransResUNet training pipeline because the full industrial dataset and trained weights are not publicly available.
 
@@ -111,10 +111,10 @@ python train.py
 ```
 This script will:
 
--Load the sample dataset
--Construct 9-channel input features
--Train a lightweight demo classifier
--Save a demo checkpoint
+- Load the sample dataset
+- Construct 9-channel input features
+- Train a lightweight demo classifier
+- Save a demo checkpoint
 
 Note: this script is provided for repository validation and reproducibility purposes. It does not reproduce the full industrial-scale training pipeline described in the paper.
 
@@ -129,25 +129,25 @@ This script performs a simplified inference workflow, including:
 
 Loading well log data from data/sample_data.csv
 Constructing 9-channel input features:
--GR, AC, DEN, RLLD
--First-order gradients
--Normalized depth (Norm_Depth)
--Encoding stratigraphic labels from the LAYER column
--Running a lightweight neural network to simulate predictions
--Outputting predicted stratigraphic units and basic statistics
+- GR, AC, DEN, RLLD
+- First-order gradients
+- Normalized depth (Norm_Depth)
+- Encoding stratigraphic labels from the LAYER column
+- Running a lightweight neural network to simulate predictions
+- Outputting predicted stratigraphic units and basic statistics
 Output Example
 
 The script will print:
 
--Data shape and feature dimensions
--Number of stratigraphic classes
--Prediction results for the first few depth points
--Demo accuracy
+- Data shape and feature dimensions
+- Number of stratigraphic classes
+- Prediction results for the first few depth points
+- Demo accuracy
 Important Notes
--This inference script is designed for workflow demonstration only
--It does not reproduce the full DA-TransResUNet model
--The full trained model and industrial dataset are not publicly available due to confidentiality constraints
--The purpose is to ensure code functionality and reproducibility compliance
+- This inference script is designed for workflow demonstration only
+- It does not reproduce the full DA-TransResUNet model
+- The full trained model and industrial dataset are not publicly available due to confidentiality constraints
+- The purpose is to ensure code functionality and reproducibility compliance
 
 ## Code Availability
 
