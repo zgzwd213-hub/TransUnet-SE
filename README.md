@@ -118,7 +118,7 @@ This script will:
 
 Note: this script is provided for repository validation and reproducibility purposes. It does not reproduce the full industrial-scale training pipeline described in the paper.
 
-## Inference
+### Inference
 
 To run inference on the sample dataset:
 
